@@ -21,6 +21,20 @@ export default StyleSheet.create({
         borderColor: 'black',
         padding: 10,
         margin: 10,
+    },
+    numero_container:{
+
+        height: 80,
+        width: 80,
+        backgroundColor: 'black',
+        justifyContent: 'center',
+        margin: 5,
+        borderRadius: 50,
+    },
+    num:{
+        color: 'white',
+        textAlign: 'center',
+        fontSize: 20,
     }
 })
 

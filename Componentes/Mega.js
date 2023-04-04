@@ -1,6 +1,7 @@
 import React from "react";
-import { Text, TextInput, Button } from "react-native";
+import { Text, TextInput, Button, View } from "react-native";
 import Estilo from "./Estilo";
+import MegaNumero from "./Numeros"
 
 export default class Mega extends React.Component{
 
@@ -19,6 +20,13 @@ export default class Mega extends React.Component{
         }
         numeros.sort((a,b) => a-b)
         this.setState({numeros})
+    }
+
+    exibirNumeros = () => {
+        const nums = this.state.numeros
+        return nums.map(n => {
+            return <MegaNumero key ={n} num={n}/>
+        })
     }
 
     gerarNumeroNaoContido = nums => {
@@ -54,8 +62,11 @@ export default class Mega extends React.Component{
                 accessibilityLabel = "Clique aqui para realizar" //acessibilidade
                 testID="meu-botao-teste"
             />
+            <View style={{flexDirection: 'row', flexWrap: 'wrap', justifyContent:'center', marginTop: 20, backgroundColor: '#FA8FE'}}>
+                {this.exibirNumeros()} 
+            </View>
 
-            <Text style={Estilo.textGrande}> {this.state.numeros.join(',')} </Text>
+            {/*<Text style={Estilo.num}> {this.state.numeros.join(',')} </Text>*/}
 
             </>
         )
@@ -63,3 +74,5 @@ export default class Mega extends React.Component{
     }
 
 }
+
+//MAP permite a visualização dinâmica
