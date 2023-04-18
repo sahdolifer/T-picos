@@ -5,9 +5,9 @@ export default StyleSheet.create({
         backgroundColor: '#FB9EDD',
         //'#FB9EDD',
         flex: 1, //componente pode ocupar 100% da tela
-        justifyContent: 'center',
-        alignItems: 'center',
-        padding: 10,
+        //justifyContent: 'center',
+       // alignItems: 'center',
+        //padding: 10,
     },
     textGrande:{
         fontSize: 25,

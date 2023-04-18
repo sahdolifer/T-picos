@@ -22,21 +22,35 @@ import Quadrado from './Componentes/Quadrado';
 import FLexbox from './Componentes/FLexbox';
 import Mega from './Componentes/Mega';
 import Button2 from './Componentes/Button2';
+import TelaA from './Componentes/TelaA';
+import TelaB from './Componentes/TelaB';
+import TelaC from './Componentes/TelaC';
+import { NavigationContainer } from '@react-navigation/native';
+import MyStack from './Componentes/MyStack';
 
 export default function App() {
   //console.warn("Opa")
-  cliquei = () => {
+  /*cliquei = () => {
     console.warn("Ok")
-}
+}*/
 
-removeLastValue = () => {
+/*removeLastValue = () => {
   setValues(values.slice(0, -1))
-}
+}*/
   return (
       <SafeAreaView style={Estilo.container}>
       <StatusBar style="auto" />
 
-      {/*<Display value={values}> </Display>
+      <NavigationContainer>
+        <MyStack> </MyStack>
+      </NavigationContainer>
+
+      {/*
+    <TelaA> </TelaA>
+    <TelaB> </TelaB>
+    <TelaC> </TelaC>
+  
+      <Display value={values}> </Display>
       
        </View> 
        
@@ -54,10 +68,12 @@ removeLastValue = () => {
        <Botao label="3" onClick={addDigito}> </Botao>
        <Botao label="2" onClick={addDigito}> </Botao>
        <Botao label="1" onClick={addDigito}> </Botao>
+      <Botao label="0" onClick={addDigito}> </Botao>
+
 
       </View>*/}
 
-      <Button2 label={'ok'} onClick={cliquei}> </Button2>
+      {/*<Button2 label={'ok'} onClick={cliquei}> </Button2>*/}
 
       {/*  <Mega qtdNUmeros={5}></Mega>
       <FLexbox></FLexbox>

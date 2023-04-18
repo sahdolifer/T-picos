@@ -1,0 +1,7 @@
+React Navigation
+
+-> Precisamos instalar para conseguir usuario
+
+Navigators - gerenciam a pilha de navegação e a transição entre as telas
+Screens - representam as telas individuais
+NAvigation Container - componente principal que envolve os Navigators e gerencia o estado de navegação
