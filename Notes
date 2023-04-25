@@ -5,3 +5,16 @@ React Navigation
 Navigators - gerenciam a pilha de navegação e a transição entre as telas
 Screens - representam as telas individuais
 NAvigation Container - componente principal que envolve os Navigators e gerencia o estado de navegação
+
+props.navigation.NavigationContainer
+    Este método é usado para navegar para uma tela específica. Se a tela já estiver presente,o método
+navigate voltará a essa tela e descartará as telas intermediárias
+
+props.navigation.push
+    É utilizado quando você deseja adicionar uma nova instância da tela ao topo da pilha de navegação.
+Isso significa que, mesmo se a tela já estiver presente na pilha, uma nova instância será criada e empilhada
+no topo.
+
+props.navigation.goBack()
+    Volta para a tela anterior da pilha
+    
