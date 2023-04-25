@@ -23,12 +23,19 @@ export default props => (
         <Stack.Screen
             name="TelaA"
             component={TelaA}
-            options={{title: "Informações iniciais"}}>
+            options={{title: "Detalhes",
+                headerStyle: {
+                    backgroundColor: "#EEB7F4",},
+                headerTintColor: "black",
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                },
+                }}>
         </Stack.Screen>
 
         <Stack.Screen name="TelaB">
             {props => (
-                <PassoStack {...props} avancar="TelaC">
+                <PassoStack {...props} avancar="TelaB">
                     <TelaB/>
                 </PassoStack>
             )}

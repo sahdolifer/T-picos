@@ -27,6 +27,8 @@ import TelaB from './Componentes/TelaB';
 import TelaC from './Componentes/TelaC';
 import { NavigationContainer } from '@react-navigation/native';
 import MyStack from './Componentes/MyStack';
+import Tab from './Componentes/Tab';
+import Drawer from './Componentes/Drawer';
 
 export default function App() {
   //console.warn("Opa")
@@ -42,10 +44,17 @@ export default function App() {
       <StatusBar style="auto" />
 
       <NavigationContainer>
-        <MyStack> </MyStack>
+      <Drawer> </Drawer>
       </NavigationContainer>
 
       {/*
+            <NavigationContainer>
+      <Tab></Tab>
+      </NavigationContainer>
+
+            <NavigationContainer>
+        <MyStack> </MyStack>
+      </NavigationContainer>
     <TelaA> </TelaA>
     <TelaB> </TelaB>
     <TelaC> </TelaC>
